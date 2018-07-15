@@ -84,7 +84,7 @@ struct ColouredText(string fmt, T) {
 	ColouredText!("%s", ulong)().toString(new OutBuffer);
 	assert(colouredText!"Test %s"(RGBA32(128,128,128), RGBA32(128,128,128), 3).text == "\x1B[38;2;128;128;128m\x1B[48;2;128;128;128mTest 3\x1B[0m");
 	assert(colouredText!"Test %s"(RGBA32(128,128,128), 3).text == "\x1B[38;2;128;128;128mTest 3\x1B[0m");
-	assert(3.red.text == "\x1B[38;2;255;0;0m3\x1B[0m");
+	assert(3.red.text == "\x1B[38;2;170;0;0m3\x1B[0m");
 }
 
 private struct StyledText(string fmt, string sequence, string endSequence = "0", T) {
