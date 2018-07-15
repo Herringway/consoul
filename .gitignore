@@ -1,0 +1,14 @@
+.dub
+docs.json
+__dummy.html
+docs/
+consoul.so
+consoul.dylib
+consoul.dll
+consoul.a
+consoul.lib
+consoul-test-*
+*.exe
+*.o
+*.obj
+*.lst

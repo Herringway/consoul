@@ -1,0 +1,9 @@
+{
+	"name": "consoul",
+	"authors": [
+		"Cameron \"Herringway\" Ross"
+	],
+	"description": "Console style library",
+	"copyright": "Copyright © 2018, Cameron",
+	"license": "BSL"
+}
