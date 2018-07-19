@@ -175,4 +175,14 @@ struct RGBA32 {
 	auto c2 = c1.randomComplementaryColour;
 	auto luminosityDifference = abs(c1.luminosity - c2.luminosity);
 	assert(luminosityDifference > 0.1, "Illegible random complementary colour generated - seed "~seed.text);
+
+	// Ensure both dark/light paths are covered
+	rndGen.seed = 2_927_724_004;
+	with (RGBA32.randomColour) {
+		randomComplementaryColour();
+	}
+	rndGen.seed = 4_288_425_729;
+	with (RGBA32.randomColour) {
+		randomComplementaryColour();
+	}
 }
