@@ -165,7 +165,6 @@ struct RGBA32 {
 		sink.formattedWrite!"#%02X%02X%02X"(red,green,blue);
 	}
 }
-///
 @safe unittest {
 	import std.conv : text;
 	import std.math : abs;
